@@ -1,0 +1,107 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      fontFamily: {
+        sans: ['Inter', 'system-ui', 'sans-serif'],
+      },
+      colors: {
+        // Off-white monochromatic palette
+        primary: {
+          50: '#FDFDFC',
+          100: '#F8F6F3',
+          200: '#F2F0ED',
+          300: '#EDE4D3',
+          400: '#DDCBB6',
+          500: '#CCB394',
+          600: '#BC9A71',
+          700: '#A08660',
+          800: '#7A6649',
+          900: '#5A4D38',
+        },
+        // Semantic colors in off-white palette
+        success: {
+          50: '#F5F7F2',
+          100: '#E8EDE0',
+          200: '#D1DBC1',
+          300: '#B5C89D',
+          400: '#9BB57C',
+          500: '#8B9A6B',
+          600: '#738055',
+          700: '#5C6644',
+          800: '#464D34',
+          900: '#323627',
+        },
+        warning: {
+          50: '#FDF8F3',
+          100: '#F9EFE0',
+          200: '#F2DFC1',
+          300: '#E8CA9D',
+          400: '#DDB57C',
+          500: '#D4A574',
+          600: '#B8915F',
+          700: '#9A7A4A',
+          800: '#7A6238',
+          900: '#5C4A29',
+        },
+        error: {
+          50: '#FDF5F4',
+          100: '#F8E8E6',
+          200: '#F0D1CD',
+          300: '#E5B5AF',
+          400: '#D99B92',
+          500: '#C4857A',
+          600: '#A86F65',
+          700: '#8B5A52',
+          800: '#6D4641',
+          900: '#523532',
+        },
+        info: {
+          50: '#F4F6FD',
+          100: '#E6EBF8',
+          200: '#CDD7F0',
+          300: '#AFBFe5',
+          400: '#92A7D9',
+          500: '#7A9BC4',
+          600: '#6585A8',
+          700: '#526E8B',
+          800: '#41566D',
+          900: '#324152',
+        },
+        // Neutral grays in warm tones
+        neutral: {
+          50: '#FDFDFC',
+          100: '#F8F6F3',
+          200: '#F2F0ED',
+          300: '#E8E5E0',
+          400: '#D1CCC4',
+          500: '#B5AFA5',
+          600: '#8B8680',
+          700: '#5A5651',
+          800: '#3D3A36',
+          900: '#2D2A26',
+        },
+      },
+      spacing: {
+        '18': '4.5rem',
+        '88': '22rem',
+      },
+      borderRadius: {
+        'xl': '1rem',
+        '2xl': '1.5rem',
+        '3xl': '2rem',
+      },
+      boxShadow: {
+        'soft': '0 2px 8px rgba(188, 154, 113, 0.08)',
+        'medium': '0 4px 16px rgba(188, 154, 113, 0.12)',
+        'strong': '0 8px 32px rgba(188, 154, 113, 0.16)',
+        'inner-soft': 'inset 0 2px 4px rgba(188, 154, 113, 0.06)',
+      },
+      backdropBlur: {
+        xs: '2px',
+      },
+    },
+  },
+  plugins: [],
+};
